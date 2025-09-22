@@ -1,7 +1,8 @@
 import os
+import json
 class Livro:
 
-    def init (self, titulo: str, autor: str):
+    def  __init__(self, titulo: str, autor: str):
         self.titulo = titulo
         self.autor = autor
 
@@ -17,7 +18,7 @@ class Estante:
 
     def adicionar_livro(self, livro: Livro): 
         """Adiciona um novo livro à estante e salva a lista no arquivo.""" 
-        if isinstance(livro, Livro): 
+        if  isinstance(livro, Livro): 
             self._livros.append(livro) 
             self.salvar_livros()
 
